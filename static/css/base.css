@@ -1,0 +1,35 @@
+body {
+  background-color: lightskyblue;
+}
+.message {
+  width: 18rem;
+  margin: 5px;
+  padding: 5px;
+  background-color: beige;
+}
+.card-button {
+  width: 100%;
+  background-color: darkgrey;
+  color: white;
+}
+.create-form {
+  background-color: beige;
+  border-radius: 25px;
+  width: 60%;
+  margin-left: 20px;
+  padding: 20px;
+  margin: 10px;
+  margin-left: 10%;
+  margin-top: 2%;
+}
+.create-button {
+  justify-content: center;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  width: 100%;
+  margin-top: 5px;
+}
+.create-form-input {
+  width: 100%;
+}

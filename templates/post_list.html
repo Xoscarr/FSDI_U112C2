@@ -4,20 +4,21 @@
 
 {% block content %}
 <ul>
-    {% for post in post_list %}
+    <div class="d-flex" felx-row flex wrap bd-highlight mb-3>
+        {% for post in post_list %}
 
-    <li>
-        <h1>
-            <a href="{% url 'post_detail' post.id %}"> {{ post.title }}</a>
+        <div class="card message">
+            <div class="card-body">
+                <h5 class="card-title">{{ post.title }}</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Message #{{ post.id }}</h6>
+                <p class="card-text"> {{ post.body|truncatechars:128 }}</p>
+                <a href="{% url 'post_detail' post.id %}" class="btn card-button">Read more...</a>
+            </div>
+        </div>
 
-        </h1>
-    </li>
+        {% endfor %}
+    </div>
 
-    <p>{{ post.body }}
-
-    </p>
-
-    {% endfor %}
 </ul>
 
 {% endblock content %}
